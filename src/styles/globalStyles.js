@@ -4,6 +4,7 @@ import "@fontsource/zen-antique-soft";
 const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
 
     *, *::before, *::after {
@@ -11,9 +12,16 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        background-color: #fff;
         margin: 0;
         padding: 80px 65px 0;
         font-family: 'Zen Antique Soft'
+    }
+
+    @media (max-width: 768px) {
+        body {
+             padding: 20px;
+        }
     }
 
     button {
@@ -25,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
     ul {
         padding: 0;
         margin: 0;
+    }
+
+    section {
+        min-height: 100vh;
     }
 `;
 

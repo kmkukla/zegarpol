@@ -1,54 +1,29 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
+import * as React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
+const NotFoundPageWrapper = styled.div`
+  height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4,
-};
+  h1 {
+    font-size: 26px;
+  }
 
-// markup
+  a {
+    display: block;
+  }
+`;
+
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{' '}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{' '}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-      {/* <a href="https://pl.freepik.com/zdjecia/tlo">Tło zdjęcie utworzone przez onlyyouqj - pl.freepik.com</a> */}
-    </main>
+    <NotFoundPageWrapper>
+      <h1>Podana strona nie istnieje</h1>
+      <Link to="/">Wróć do strony głównej</Link>
+    </NotFoundPageWrapper>
   );
 };
 
