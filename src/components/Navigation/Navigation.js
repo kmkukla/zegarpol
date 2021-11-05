@@ -8,13 +8,18 @@ const Nav = styled.nav`
   border-bottom: 2px solid #f1f1f1;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
 `;
 
 const Navigation = () => {
   return (
     <Nav>
-      <div>Logo</div>
       <Burger />
     </Nav>
   );
