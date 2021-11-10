@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Ul = styled.ul`
   list-style: none;
@@ -41,35 +42,47 @@ const Ul = styled.ul`
   }
 `;
 
+const StyledRightNavLogo = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 const RightNav = ({ open, toggleMenu }) => {
   return (
-    <Ul open={open}>
-      <li>
-        <Link to="#about" onClick={toggleMenu}>
-          O nas
-        </Link>
-      </li>
-      <li>
-        <Link to="#offer" onClick={toggleMenu}>
-          Oferta
-        </Link>
-      </li>
-      <li>
-        <Link to="#opening-hours" onClick={toggleMenu}>
-          Godziny otwarcia
-        </Link>
-      </li>
-      <li>
-        <Link to="#location" onClick={toggleMenu}>
-          Lokalizacja
-        </Link>
-      </li>
-      <li>
-        <Link to="#contact" onClick={toggleMenu}>
-          Kontakt
-        </Link>
-      </li>
-    </Ul>
+    <>
+      <Ul open={open}>
+        <li>
+          <Link to="#about" onClick={toggleMenu}>
+            O nas
+          </Link>
+        </li>
+        <li>
+          <Link to="#offer" onClick={toggleMenu}>
+            Oferta
+          </Link>
+        </li>
+        <li>
+          <Link to="#opening-hours" onClick={toggleMenu}>
+            Godziny otwarcia
+          </Link>
+        </li>
+        <li>
+          <Link to="#location" onClick={toggleMenu}>
+            Lokalizacja
+          </Link>
+        </li>
+        <li>
+          <Link to="#contact" onClick={toggleMenu}>
+            Kontakt
+          </Link>
+        </li>
+        <StyledRightNavLogo>
+          <StaticImage src="../../images/zegarpol-logo-removebg.webp" />
+        </StyledRightNavLogo>
+      </Ul>
+    </>
   );
 };
 

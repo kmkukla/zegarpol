@@ -9,8 +9,10 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: flex-end;
+  background-color: #fff;
   position: sticky;
   top: 0;
+  z-index: 1;
 
   @media (max-width: 768px) {
     position: static;
