@@ -10,16 +10,23 @@ const OfferSection = () => {
         alt="zegarpol logo"
       />
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
-        commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum
-        modi sit esse a? Fugiat a, alias quia ullam quod quibusdam labore veniam
-        suscipit repellendus rem eum corrupti omnis vitae nemo porro eveniet
-        est, repellat architecto deserunt, soluta magni. Numquam optio
-        asperiores magnam sint praesentium nobis quaerat possimus, amet quis
-        culpa iure! Possimus, mollitia delectus! Quae, a recusandae quidem odio
-        autem inventore dolore quo officia blanditiis. Commodi, ipsum enim saepe
-        incidunt nemo eveniet sit quisquam magnam error, nam unde. Eum corporis
-        facere sequi illum, ipsa illo eligendi porro fugiat culpa nihil?
+        <ul>
+          <li>kompleksowa naprawa i konserwacja</li>
+          <li>sprzedaż zegarów i zegarków</li>
+          <li>sprzedaż baterii</li>
+          <li>wymiana baterii w pilotach samochodowych</li>
+          <li>wymiana pasków do zegarków</li>
+          <li>konserwacja, regulacja i czyszczenie zegarków naręcznych</li>
+          <li>wymiana szkieł</li>
+          <li>
+            naprawa zegarów wiszących, stojących, ściennych, kominkowych i
+            gabinetowych
+          </li>
+          <li>skracanie bransolet</li>
+          <li>akcesoria do zegarków, np. paski, bransolety, teleskopy itp.</li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </SectionWrapper>
   );

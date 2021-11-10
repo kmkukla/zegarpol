@@ -1,14 +1,46 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
+
+const ImageContainer = styled.div`
+  position: relative;
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+  width: 75%;
+  margin-bottom: 20px;
+  &:nth-child(2) {
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    @media (max-width: 768px) {
+      top: 50px;
+      left: 50px;
+    }
+  }
+`;
 
 const AboutSection = () => {
   return (
     <SectionWrapper id="about">
-      <StaticImage
-        src="../../../images/zegarpol-logo.png"
-        alt="zegarpol logo"
-      />
+      <ImageContainer>
+        <ImageWrapper>
+          <StaticImage
+            src="../../../images/pocket-watches.jpg"
+            alt="zegarpol logo"
+            placeholder="tracedSVG"
+          />{" "}
+        </ImageWrapper>
+        <ImageWrapper>
+          <StaticImage
+            src="../../../images/alarm-clocks.jpg"
+            alt="zegarpol logo"
+            placeholder="tracedSVG"
+          />
+        </ImageWrapper>
+      </ImageContainer>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
         commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum

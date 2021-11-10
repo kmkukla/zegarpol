@@ -6,20 +6,15 @@ const OpeningHoursSection = () => {
   return (
     <SectionWrapper id="opening-hours">
       <StaticImage
-        src="../../../images/zegarpol-logo.png"
+        src="../../../images/big-watch.jpg"
         alt="zegarpol logo"
+        placeholder="tracedSVG"
       />
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
-        commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum
-        modi sit esse a? Fugiat a, alias quia ullam quod quibusdam labore veniam
-        suscipit repellendus rem eum corrupti omnis vitae nemo porro eveniet
-        est, repellat architecto deserunt, soluta magni. Numquam optio
-        asperiores magnam sint praesentium nobis quaerat possimus, amet quis
-        culpa iure! Possimus, mollitia delectus! Quae, a recusandae quidem odio
-        autem inventore dolore quo officia blanditiis. Commodi, ipsum enim saepe
-        incidunt nemo eveniet sit quisquam magnam error, nam unde. Eum corporis
-        facere sequi illum, ipsa illo eligendi porro fugiat culpa nihil?
+        <p>Godziny otwarcia</p>
+        <p>Poniedziałek - Piątek: 9:30 - 16:00</p>
+        <p>Sobota: 9:30 - 13:00</p>
+        <p>Niedziela: nieczynne</p>
       </div>
     </SectionWrapper>
   );

@@ -6,20 +6,19 @@ const LocationSection = () => {
   return (
     <SectionWrapper id="location">
       <StaticImage
-        src="../../../images/zegarpol-logo.png"
-        alt="zegarpol logo"
+        src="../../../images/zegarpol-location.jpg"
+        alt="zegarpol location"
       />
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
-        commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum
-        modi sit esse a? Fugiat a, alias quia ullam quod quibusdam labore veniam
-        suscipit repellendus rem eum corrupti omnis vitae nemo porro eveniet
-        est, repellat architecto deserunt, soluta magni. Numquam optio
-        asperiores magnam sint praesentium nobis quaerat possimus, amet quis
-        culpa iure! Possimus, mollitia delectus! Quae, a recusandae quidem odio
-        autem inventore dolore quo officia blanditiis. Commodi, ipsum enim saepe
-        incidunt nemo eveniet sit quisquam magnam error, nam unde. Eum corporis
-        facere sequi illum, ipsa illo eligendi porro fugiat culpa nihil?
+        <iframe
+          title="location"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10113.10132923754!2d19.2147389!3d50.6777141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5270ba3590df72c8!2sZegarpol!5e0!3m2!1spl!2spl!4v1636369353666!5m2!1spl!2spl"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </SectionWrapper>
   );

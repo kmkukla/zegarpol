@@ -2,11 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 export const StyledSectionWrapper = styled.section`
-  display: flex;
   padding-top: 50px;
+  display: flex;
+  flex-direction: row;
 
   > * {
     flex-basis: 50%;
+    padding: 25px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 25px;
+    flex-direction: column;
+
+    > * {
+      flex-basis: 100%;
+    }
   }
 `;
 
