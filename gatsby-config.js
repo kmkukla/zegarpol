@@ -47,5 +47,11 @@ module.exports = {
         once: false, // Defines if animation needs to be launched once
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -75,
+      },
+    },
   ],
 };
