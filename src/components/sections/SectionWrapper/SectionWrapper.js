@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const StyledSectionWrapper = styled.section`
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   display: flex;
   flex-direction: row;
 
@@ -17,6 +17,7 @@ export const StyledSectionWrapper = styled.section`
 
     > * {
       flex-basis: 100%;
+      padding: 0;
     }
   }
 `;

@@ -5,19 +5,24 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 const ImageContainer = styled.div`
   position: relative;
+  @media (max-width: 768px) {
+    display: flex;
+    margin-bottom: 100px;
+  }
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
   width: 75%;
-  margin-bottom: 20px;
+
   &:nth-child(2) {
     position: absolute;
     top: 75px;
     left: 100px;
     @media (max-width: 768px) {
+      left: auto;
       top: 50px;
-      left: 50px;
+      right: 0px;
     }
   }
 `;
@@ -28,30 +33,26 @@ const AboutSection = () => {
       <ImageContainer>
         <ImageWrapper>
           <StaticImage
-            src="../../../images/pocket-watches.jpg"
+            src="../../../images/omega.jpg"
             alt="zegarpol logo"
             placeholder="tracedSVG"
           />{" "}
         </ImageWrapper>
         <ImageWrapper>
           <StaticImage
-            src="../../../images/alarm-clocks.jpg"
+            src="../../../images/festina.jpg"
             alt="zegarpol logo"
             placeholder="tracedSVG"
           />
         </ImageWrapper>
       </ImageContainer>
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
-        commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum
-        modi sit esse a? Fugiat a, alias quia ullam quod quibusdam labore veniam
-        suscipit repellendus rem eum corrupti omnis vitae nemo porro eveniet
-        est, repellat architecto deserunt, soluta magni. Numquam optio
-        asperiores magnam sint praesentium nobis quaerat possimus, amet quis
-        culpa iure! Possimus, mollitia delectus! Quae, a recusandae quidem odio
-        autem inventore dolore quo officia blanditiis. Commodi, ipsum enim saepe
-        incidunt nemo eveniet sit quisquam magnam error, nam unde. Eum corporis
-        facere sequi illum, ipsa illo eligendi porro fugiat culpa nihil?
+        Firma Zegarpol działa na rynku od około 30 lat. Wiele lat doswiadczenia
+        pozwalają nam zaoferować wysokiej jakosci usługi zegarmistrzowskie.
+        Cechuje nas precyzja i doskonała jakosć. Drobne usługi wykonujemy na
+        poczekaniu. Oprócz serwisu posiadamy w sprzedaży także zarówno nowe jak
+        i antyczne zegary, zegarki oraz akcesoria takie jak paski, baterie,
+        bransolety, itp.
       </div>
     </SectionWrapper>
   );

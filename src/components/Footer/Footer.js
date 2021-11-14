@@ -38,7 +38,7 @@ const StyledFooterLogoWrapper = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
+export const StyledLink = styled.a`
   text-decoration: none;
   color: black;
   font-weight: bold;
