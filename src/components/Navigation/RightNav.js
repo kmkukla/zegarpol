@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Ul = styled.ul`
@@ -53,30 +53,20 @@ const RightNav = ({ open, toggleMenu }) => {
   return (
     <>
       <Ul open={open}>
-        <li>
-          <Link to="#about" onClick={toggleMenu}>
-            O nas
-          </Link>
+        <li onClick={toggleMenu}>
+          <AnchorLink to="/#about">O nas</AnchorLink>
         </li>
-        <li>
-          <Link to="#offer" onClick={toggleMenu}>
-            Oferta
-          </Link>
+        <li onClick={toggleMenu}>
+          <AnchorLink to="/#offer">Oferta</AnchorLink>
         </li>
-        <li>
-          <Link to="#opening-hours" onClick={toggleMenu}>
-            Godziny otwarcia
-          </Link>
+        <li onClick={toggleMenu}>
+          <AnchorLink to="/#opening-hours">Godziny otwarcia</AnchorLink>
         </li>
-        <li>
-          <Link to="#location" onClick={toggleMenu}>
-            Lokalizacja
-          </Link>
+        <li onClick={toggleMenu}>
+          <AnchorLink to="/#location">Lokalizacja</AnchorLink>
         </li>
-        <li>
-          <Link to="#contact" onClick={toggleMenu}>
-            Kontakt
-          </Link>
+        <li onClick={toggleMenu}>
+          <AnchorLink to="/#contact">Kontakt</AnchorLink>
         </li>
         <StyledRightNavLogo>
           <StaticImage src="../../images/zegarpol-logo-removebg.webp" />
