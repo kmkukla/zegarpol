@@ -1,26 +1,36 @@
 import React from "react";
+import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
+import { StyledLink } from "../../Footer/Footer";
+
+const LogoWrapper = styled.div`
+  @media (max-width: 768px) {
+    order: 1;
+    padding-top: 25px;
+  }
+`;
 
 const ContactSection = () => {
   return (
     <SectionWrapper id="contact">
-      <StaticImage
-        src="../../../images/zegarpol-logo.png"
-        alt="zegarpol logo"
-        placeholder="tracedSVG"
-      />
+      <LogoWrapper>
+        <StaticImage
+          src="../../../images/zegarpol-logo.png"
+          alt="zegarpol logo"
+          placeholder="tracedSVG"
+          style={{ maxHeight: "320px" }}
+        />
+      </LogoWrapper>
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto
-        commodi, omnis aliquid animi nobis maxime consequatur, doloremque illum
-        modi sit esse a? Fugiat a, alias quia ullam quod quibusdam labore veniam
-        suscipit repellendus rem eum corrupti omnis vitae nemo porro eveniet
-        est, repellat architecto deserunt, soluta magni. Numquam optio
-        asperiores magnam sint praesentium nobis quaerat possimus, amet quis
-        culpa iure! Possimus, mollitia delectus! Quae, a recusandae quidem odio
-        autem inventore dolore quo officia blanditiis. Commodi, ipsum enim saepe
-        incidunt nemo eveniet sit quisquam magnam error, nam unde. Eum corporis
-        facere sequi illum, ipsa illo eligendi porro fugiat culpa nihil?
+        <h2>Masz pytania?</h2>
+        <StyledLink href="mailto:iwokuk@onet.pl">
+          <span>Napisz maila</span>
+        </StyledLink>
+        <span> lub </span>
+        <StyledLink href="tel:+48516159624">
+          <span>zadzwoń</span>
+        </StyledLink>
       </div>
     </SectionWrapper>
   );
