@@ -1,9 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "zegarpol",
+    title: "Zegarpol",
+    author: `Konrad Kukla`,
+    titleTemplate: "Zegarpol",
+    description: "Zegarmistrz - naprawa / sprzedaż",
+    url: "https://www.zegarpol.pl", // No trailing slash allowed!
+    image: "/zegarpol-logo.png", // Path to the image placed in the 'static' folder, in the project's root directory.
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     {

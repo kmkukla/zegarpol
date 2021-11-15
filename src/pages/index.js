@@ -8,6 +8,7 @@ import LocationSection from "../components/sections/Location/LocationSection";
 import ContactSection from "../components/sections/Contact/ContactSection";
 import Particles from "react-tsparticles";
 import Footer from "../components/Footer/Footer";
+import SEO from "../components/Seo/Seo";
 
 const IndexPage = () => {
   return (
@@ -41,6 +42,7 @@ const IndexPage = () => {
           retina_detect: true,
         }}
       />
+      <SEO keywords={[`zegarmistrz`, `poraj`, `myszków`, `częstochowa`]} />
       <GlobalStyle />
       <Navigation />
       <AboutSection />
