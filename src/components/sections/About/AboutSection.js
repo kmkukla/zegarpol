@@ -34,14 +34,14 @@ const AboutSection = () => {
         <ImageWrapper>
           <StaticImage
             src="../../../images/omega.jpg"
-            alt="zegarpol logo"
+            alt="wrist watch"
             placeholder="tracedSVG"
           />{" "}
         </ImageWrapper>
         <ImageWrapper>
           <StaticImage
             src="../../../images/festina.jpg"
-            alt="zegarpol logo"
+            alt="wrist watch"
             placeholder="tracedSVG"
           />
         </ImageWrapper>

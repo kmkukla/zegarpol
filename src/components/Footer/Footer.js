@@ -95,6 +95,7 @@ const Footer = () => {
       <StyledFooterLogoWrapper>
         <StaticImage
           src="../../images/zegarpol-logo-removebg.webp"
+          alt="zegarpol logo"
           width={160}
           height={50}
         />

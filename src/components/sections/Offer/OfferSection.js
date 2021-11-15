@@ -44,7 +44,7 @@ const OfferSection = () => {
       <div>
         <StaticImage
           src="../../../images/steampunk-watch.jpg"
-          alt="zegarpol logo"
+          alt="big watch"
         />
       </div>
     </SectionWrapper>

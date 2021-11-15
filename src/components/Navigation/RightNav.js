@@ -69,7 +69,10 @@ const RightNav = ({ open, toggleMenu }) => {
           <AnchorLink to="/#contact">Kontakt</AnchorLink>
         </li>
         <StyledRightNavLogo>
-          <StaticImage src="../../images/zegarpol-logo-removebg.webp" />
+          <StaticImage
+            src="../../images/zegarpol-logo-removebg.webp"
+            alt="zegarpol logo"
+          />
         </StyledRightNavLogo>
       </Ul>
     </>

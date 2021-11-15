@@ -8,7 +8,7 @@ const OpeningHoursSection = () => {
       <div>
         <StaticImage
           src="../../../images/big-watch.jpg"
-          alt="zegarpol logo"
+          alt="big watch"
           placeholder="tracedSVG"
         />
       </div>
