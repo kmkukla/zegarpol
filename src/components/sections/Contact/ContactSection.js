@@ -14,14 +14,14 @@ const LogoWrapper = styled.div`
 const ContactSection = () => {
   return (
     <SectionWrapper id="contact">
-      <LogoWrapper>
+      {/* <LogoWrapper>
         <StaticImage
           src="../../../images/zegarpol-logo.png"
           alt="zegarpol logo"
           placeholder="tracedSVG"
           style={{ maxHeight: "320px" }}
         />
-      </LogoWrapper>
+      </LogoWrapper> */}
       <div>
         <h2>Masz pytania?</h2>
         <StyledLink href="mailto:iwokuk@onet.pl">

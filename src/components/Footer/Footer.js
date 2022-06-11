@@ -84,14 +84,14 @@ export const StyledLink = styled.a`
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledContactButtonsContainer>
+      {/* <StyledContactButtonsContainer>
         <StyledLink href="tel:+48516159624">
           <span>zadzwoń</span>
         </StyledLink>
         <StyledLink href="mailto:iwokuk@onet.pl">
           <span>wyslij email</span>
         </StyledLink>
-      </StyledContactButtonsContainer>
+      </StyledContactButtonsContainer> */}
       <StyledFooterLogoWrapper>
         <StaticImage
           src="../../images/zegarpol-logo-removebg.webp"
@@ -101,12 +101,12 @@ const Footer = () => {
         />
       </StyledFooterLogoWrapper>
       <div>ZEGARPOL {new Date().getFullYear()} &copy;</div>
-      <StyledAuthorInfo>
+      {/* <StyledAuthorInfo>
         made by{" "}
         <StyledLink href="https://www.kukla.dev/">
           <span>kukla.dev</span>
         </StyledLink>
-      </StyledAuthorInfo>
+      </StyledAuthorInfo> */}
     </StyledFooter>
   );
 };

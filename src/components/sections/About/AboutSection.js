@@ -27,6 +27,10 @@ const ImageWrapper = styled.div`
   }
 `;
 
+const StyledContentWrapper = styled.p`
+  line-height: 40px;
+`;
+
 const AboutSection = () => {
   return (
     <SectionWrapper id="about">
@@ -46,14 +50,14 @@ const AboutSection = () => {
           />
         </ImageWrapper>
       </ImageContainer>
-      <div>
+      <StyledContentWrapper>
         Firma Zegarpol działa na rynku od około 30 lat. Wiele lat doswiadczenia
         pozwalają nam zaoferować wysokiej jakosci usługi zegarmistrzowskie.
         Cechuje nas precyzja i doskonała jakosć. Drobne usługi wykonujemy na
         poczekaniu. Oprócz serwisu posiadamy w sprzedaży także zarówno nowe jak
         i antyczne zegary, zegarki oraz akcesoria takie jak paski, baterie,
         bransolety, itp.
-      </div>
+      </StyledContentWrapper>
     </SectionWrapper>
   );
 };

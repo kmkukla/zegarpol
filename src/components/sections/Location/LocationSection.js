@@ -12,7 +12,7 @@ const LocationSection = () => {
         />
         <h2>Gdzie się znajdujemy?</h2>
         <p>Poraj, ul. Armii Krajowej 6</p>
-        <p>W punkcie "Browarski Okna", wejscie obok Besili Kebab</p>
+        <p>W punkcie "Browarski Okna"</p>
       </div>
       <div>
         <iframe
